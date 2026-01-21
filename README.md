@@ -1,5 +1,5 @@
 # Trusted Sources
-My list of trusted AltSources (meaning they are official, and tied to OSS or vetted applications). I guess you can send people here when they ask for .ipas.
+My list of trusted AltSources (Meaning they are official, and tied to OSS or vetted applications. No piracy!). I guess you can send people here when they ask for .ipas.
 
 ## Stable:
 
