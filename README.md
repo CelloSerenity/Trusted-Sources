@@ -22,5 +22,5 @@ My list of trusted AltSources (Meaning they are official, and tied to OSS or vet
 
 | Source | Apps | Add Source |
 |---|---|---|
-| LiveContainer (nightly) | [LiveContainer](https://github.com/LiveContainer/LiveContainer) | [Open in AltDirect](https://celloserenity.github.io/altdirect/?url=https://github.com/LiveContainer/LiveContainer/releases/download/nightly/apps_nightly.json&exclude=livecontainer) |
+| LiveContainer (nightly) | [LiveContainer](https://github.com/LiveContainer/LiveContainer) | [Open in AltDirect](https://stikstore.app/altdirect/?url=https://github.com/LiveContainer/LiveContainer/releases/download/nightly/apps_nightly.json&exclude=livecontainer) |
 | Geode (Prerelease) | [Geode](https://github.com/geode-sdk/ios-launcher) | [Open in AltDirect](https://stikstore.app/altdirect/?url=https://ios-repo.geode-sdk.org/altsource/pre.json) |
