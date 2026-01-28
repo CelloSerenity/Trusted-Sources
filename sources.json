@@ -1,8 +1,7 @@
 {
   "meta": {
     "name": "Trusted Sources",
-    "description": "An auto-updating, machine-parsable list of trusted AltStore Sources. Helpful when people ask for .ipas.",
-    "last-edited": "2026-01-28"
+    "description": "An auto-updating, machine-parsable list of trusted AltStore Sources (OSS and active). I guess you can use it when people ask for .ipas."
   },
   "stable": [
     {
