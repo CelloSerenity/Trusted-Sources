@@ -1,8 +1,6 @@
 name: Generate README from sources.json
 on:
   push:
-    paths:
-      - sources.json
   workflow_dispatch:
 permissions:
   contents: write
