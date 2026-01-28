@@ -21,7 +21,7 @@
         {
           "name": "Clip",
           "url": "https://github.com/rileytestut/Clip",
-          "description": "Background Clipboard"
+          "description": "Clipboard manager for iOS that can monitor your clipboard indefinitely in the background."
         }
       ],
       "url": "https://apps.altstore.io/"
@@ -31,8 +31,8 @@
       "apps": [
         {
           "name": "SideStore",
-          "url": "https://github.com/altstoreio/SideStore/SideStore",
-          "description": "Fork of AltStore that doesn't require a computer post-install."
+          "url": "https://github.com/SideStore/SideStore",
+          "description": "Fork of AltStore which doesn't require a computer post-install."
         }
       ],
       "url": "https://sidestore.io/apps-v2.json"
@@ -76,7 +76,7 @@
         {
           "name": "Manic EMU",
           "url": "https://github.com/Manic-EMU/ManicEMU",
-          "description": "Multi-system emulator. 3DS compatible with JIT."
+          "description": "Multi-system emulator. 3DS emulator supports JIT."
         }
       ],
       "url": "https://apps.manicemu.site/altstore"
@@ -87,7 +87,7 @@
         {
           "name": "DolphiniOS",
           "url": "https://github.com/OatmealDome/dolphin-ios",
-          "description": "Wii and Gamecube emulator for iOS. Requires JIT for best performance."
+          "description": "Wii and Gamecube emulator for iOS. Requires JIT for optimal performance."
         }
       ],
       "url": "https://altstore.oatmealdome.me"
@@ -98,7 +98,7 @@
         {
           "name": "UTM",
           "url": "https://github.com/utmapp/UTM",
-          "description": "Virtual machines on iOS. Requires JIT for best performance."
+          "description": "Virtual machines on iOS. Requires JIT for optimal performance."
         }
       ],
       "url": "https://alt.getutm.app"
@@ -109,7 +109,7 @@
         {
           "name": "Flycast-iOS",
           "url": "https://github.com/chachillie/Flycast-iOS",
-          "description": "A fork of Flycast, a multiplatform Sega Dreamcast, Naomi, Naomi 2 and Atomiswave emulator, compatible with iOS 26. Requires JIT."
+          "description": "A fork of Flycast, a multiplatform Sega Dreamcast, Naomi, Naomi 2 and Atomiswave emulator, compatible with iOS 26 JIT. Requires JIT for optimal performance."
         }
       ],
       "url": "https://github.com/chachillie/Flycast-iOS/raw/main/flycast-ios.json"
@@ -120,7 +120,7 @@
         {
           "name": "Geode",
           "url": "https://github.com/geode-sdk/ios-launcher",
-          "description": "Geometry Dash modloader. Supports JIT."
+          "description": "Geometry Dash modloader. Supports JIT for optimal performance."
         }
       ],
       "url": "https://ios-repo.geode-sdk.org/altsource/main.json"
