@@ -10,129 +10,142 @@
       "apps": [
         {
           "name": "AltStore",
-          "url": "https://github.com/altstoreio/AltStore/tree/classic"
+          "url": "https://github.com/altstoreio/AltStore/tree/classic",
+          "description": "Alternative app store for iOS/iPadOS devices."
         },
         {
           "name": "Delta",
-          "url": "https://github.com/rileytestut/Delta"
+          "url": "https://github.com/rileytestut/Delta",
+          "description": "Multi-system emulator for iOS."
         },
         {
           "name": "Clip",
-          "url": "https://github.com/rileytestut/Clip"
+          "url": "https://github.com/rileytestut/Clip",
+          "description": "Background Clipboard"
         }
       ],
-      "add_source": "https://stikstore.app/altdirect/?url=https://apps.altstore.io/",
-      "description": "Apps that push the boundaries of iOS."
+      "url": "https://apps.altstore.io/"
     },
     {
       "source": "SideStore",
       "apps": [
         {
           "name": "SideStore",
-          "url": "https://github.com/altstoreio/SideStore/SideStore"
+          "url": "https://github.com/altstoreio/SideStore/SideStore",
+          "description": "Fork of AltStore that doesn't require a computer post-install."
         }
       ],
-      "add_source": "https://stikstore.app/altdirect/?url=https://sidestore.io/apps-v2.json",
-      "description": "Free (Apple ID) sideloader."
+      "url": "https://sidestore.io/apps-v2.json"
     },
     {
       "source": "Feather",
       "apps": [
         {
           "name": "Feather",
-          "url": "https://github.com/khcrysalis/Feather"
+          "url": "https://github.com/khcrysalis/Feather",
+          "description": "On-device iOS/iPadOS application signer/installer for Apple Developer Program (paid) certificates."
         }
       ],
-      "add_source": "https://stikstore.app/altdirect/?url=https://github.com/khcrysalis/Feather/raw/main/app-repo.json",
-      "description": "ADP Certificate (paid) sideloader"
+      "url": "https://github.com/khcrysalis/Feather/raw/main/app-repo.json"
     },
     {
       "source": "LiveContainer",
       "apps": [
         {
           "name": "LiveContainer",
-          "url": "https://github.com/LiveContainer/LiveContainer"
+          "url": "https://github.com/LiveContainer/LiveContainer",
+          "description": "An app launcher that runs iOS apps without actually installing them!"
         }
       ],
-      "add_source": "https://stikstore.app/altdirect/?url=https://github.com/LiveContainer/LiveContainer/raw/main/apps.json&exclude=livecontainer",
-      "description": ""
+      "url": "https://github.com/LiveContainer/LiveContainer/raw/main/apps.json"
     },
     {
       "source": "StikDebug",
       "apps": [
         {
           "name": "StikDebug",
-          "url": "https://github.com/StephenDev0"
+          "url": "https://github.com/StephenDev0",
+          "description": "JIT enabler for iOS 17.4+."
         }
       ],
-      "add_source": "https://stikstore.app/altdirect/?url=https://stikdebug.xyz/index.json",
-      "description": "JIT enabler for iOS 17.4+."
+      "url": "https://stikdebug.xyz/index.json"
     },
     {
       "source": "Manic EMU",
       "apps": [
         {
           "name": "Manic EMU",
-          "url": "https://github.com/Manic-EMU/ManicEMU"
+          "url": "https://github.com/Manic-EMU/ManicEMU",
+          "description": "Multi-system emulator. 3DS compatible with JIT."
         }
       ],
-      "add_source": "https://stikstore.app/altdirect/?url=https://apps.manicemu.site/altstore",
-      "description": "Multi-system emulator. 3DS compatible with JIT."
+      "url": "https://apps.manicemu.site/altstore"
     },
     {
       "source": "OatmealDome",
       "apps": [
         {
           "name": "DolphiniOS",
-          "url": "https://github.com/OatmealDome/dolphin-ios"
+          "url": "https://github.com/OatmealDome/dolphin-ios",
+          "description": "Wii and Gamecube emulator for iOS. Requires JIT for best performance."
         }
       ],
-      "add_source": "https://stikstore.app/altdirect/?url=https://altstore.oatmealdome.me",
-      "description": "Wii and Gamecube emulator for iOS. Requires JIT for best performance."
+      "url": "https://altstore.oatmealdome.me"
     },
     {
       "source": "UTM",
       "apps": [
         {
           "name": "UTM",
-          "url": "https://github.com/utmapp/UTM"
+          "url": "https://github.com/utmapp/UTM",
+          "description": "Virtual machines on iOS. Requires JIT for best performance."
         }
       ],
-      "add_source": "https://stikstore.app/altdirect/?url=https://alt.getutm.app",
-      "description": "Virtual machines on iOS. Requires JIT for best performance."
+      "url": "https://alt.getutm.app"
     },
     {
       "source": "Flycast-iOS 26",
       "apps": [
         {
           "name": "Flycast-iOS",
-          "url": "https://github.com/chachillie/Flycast-iOS"
+          "url": "https://github.com/chachillie/Flycast-iOS",
+          "description": "A fork of Flycast, a multiplatform Sega Dreamcast, Naomi, Naomi 2 and Atomiswave emulator, compatible with iOS 26. Requires JIT."
         }
       ],
-      "add_source": "https://stikstore.app/altdirect/?url=https://github.com/chachillie/Flycast-iOS/raw/main/flycast-ios.json",
-      "description": ""
+      "url": "https://github.com/chachillie/Flycast-iOS/raw/main/flycast-ios.json"
     },
     {
       "source": "Geode",
       "apps": [
         {
           "name": "Geode",
-          "url": "https://github.com/geode-sdk/ios-launcher"
+          "url": "https://github.com/geode-sdk/ios-launcher",
+          "description": "Geometry Dash modloader. Supports JIT."
         }
       ],
-      "add_source": "https://stikstore.app/altdirect/?url=https://ios-repo.geode-sdk.org/altsource/main.json",
-      "description": "Geometry Dash modloader. Supports JIT."
+      "url": "https://ios-repo.geode-sdk.org/altsource/main.json"
+    },
+    {
+      "source": "Crystall1ne.dev",
+      "apps": [
+        {
+          "name": "Amethyst",
+          "url": "https://github.com/AngelAuraMC/Amethyst-iOS",
+          "description": "Bringing Minecraft: Java Edition to mobile devices. Requires JIT and memory entitlement.."
+        }
+      ],
+      "url": "https://alt.crystall1ne.dev"
     },
     {
       "source": "Countdown-App",
       "apps": [
         {
           "name": "Countdown",
-          "url": "https://github.com/neoarz/Countdown-App"
+          "url": "https://github.com/neoarz/Countdown-App",
+          "description": "Parody app based off the movie 'Countdown'. Use at your own risk."
         }
       ],
-      "add_source": "https://stikstore.app/altdirect/?url=https://github.com/neoarz/Countdown-App/raw/main/Countdown.json",
-      "description": "Parody app based off the movie 'Countdown'. Use at your own risk."
+      "url": "https://github.com/neoarz/Countdown-App/raw/main/Countdown.json"
     }
   ],
   "betas": [
@@ -141,22 +154,22 @@
       "apps": [
         {
           "name": "LiveContainer",
-          "url": "https://github.com/LiveContainer/LiveContainer"
+          "url": "https://github.com/LiveContainer/LiveContainer",
+          "description": "LiveContainer nightly builds."
         }
       ],
-      "add_source": "https://stikstore.app/altdirect/?url=https://github.com/LiveContainer/LiveContainer/releases/download/nightly/apps_nightly.json&exclude=livecontainer",
-      "description": "LiveContainer nightly builds."
+      "url": "https://github.com/LiveContainer/LiveContainer/releases/download/nightly/apps_nightly.json&exclude=livecontainer",
     },
     {
       "source": "Geode (Prerelease)",
       "apps": [
         {
           "name": "Geode",
-          "url": "https://github.com/geode-sdk/ios-launcher"
+          "url": "https://github.com/geode-sdk/ios-launcher",
+          "description": "Geode Prerelease."
         }
       ],
-      "add_source": "https://stikstore.app/altdirect/?url=https://ios-repo.geode-sdk.org/altsource/pre.json",
-      "description": "Geode Prerelease."
+      "url": "https://ios-repo.geode-sdk.org/altsource/pre.json"
     }
   ]
 }
