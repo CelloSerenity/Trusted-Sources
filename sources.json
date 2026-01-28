@@ -75,7 +75,7 @@
         {
           "name": "Manic EMU",
           "url": "https://github.com/Manic-EMU/ManicEMU",
-          "description": "Multi-system emulator. 3DS emulator supports JIT."
+          "description": "Multi-system emulator. 3DS emulator supports JIT for optimal performance."
         }
       ],
       "url": "https://apps.manicemu.site/altstore"
@@ -128,7 +128,7 @@
       "source": "Crystall1ne.dev",
       "apps": [
         {
-          "name": "Amethyst",
+          "name": "Angel Aura Amethyst",
           "url": "https://github.com/AngelAuraMC/Amethyst-iOS",
           "description": "Bringing Minecraft: Java Edition to mobile devices. Requires JIT and memory entitlement."
         }
