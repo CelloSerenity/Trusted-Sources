@@ -1,6 +1,6 @@
 # Trusted Sources
 
-Auto-updating, machine-parsable list of trusted AltSources.
+An auto-updating, machine-parsable list of trusted AltStore Sources. Helpful when people ask for .ipas.
 
 ## Stable:
 
