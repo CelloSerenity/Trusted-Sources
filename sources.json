@@ -2,7 +2,7 @@
   "meta": {
     "name": "Trusted Sources",
     "description": "Machine-parsable list of trusted AltSources.",
-    "date": "2026-01-28",
+    "date": "2026-01-28"
   },
   "stable": [
     {
@@ -64,7 +64,7 @@
       "apps": [
         {
           "name": "StikDebug",
-          "url": "https://github.com/StephenDev0",
+          "url": "https://github.com/StephenDev0/StikDebug",
           "description": "JIT enabler for iOS 17.4+."
         }
       ],
@@ -131,7 +131,7 @@
         {
           "name": "Amethyst",
           "url": "https://github.com/AngelAuraMC/Amethyst-iOS",
-          "description": "Bringing Minecraft: Java Edition to mobile devices. Requires JIT and memory entitlement.."
+          "description": "Bringing Minecraft: Java Edition to mobile devices. Requires JIT and memory entitlement."
         }
       ],
       "url": "https://alt.crystall1ne.dev"
@@ -158,7 +158,7 @@
           "description": "LiveContainer nightly builds."
         }
       ],
-      "url": "https://github.com/LiveContainer/LiveContainer/releases/download/nightly/apps_nightly.json&exclude=livecontainer",
+      "url": "https://github.com/LiveContainer/LiveContainer/releases/download/nightly/apps_nightly.json"
     },
     {
       "source": "Geode (Prerelease)",
