@@ -2,6 +2,8 @@
 
 An auto-updating, machine-parsable list of trusted AltStore Sources. Helpful when people ask for .ipas.
 
+Last updated: 2026-01-28
+
 ## Stable:
 
 | Source | Apps | Add Source | Description |
