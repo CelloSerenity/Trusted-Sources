@@ -1,6 +1,9 @@
 name: Generate README from sources.json
 on:
   push:
+    paths:
+      - 'sources.json'
+      - '.github/workflows/update-readme.yml'
   workflow_dispatch:
 permissions:
   contents: write
@@ -26,9 +29,11 @@ jobs:
           const stable = Array.isArray(data.stable) ? data.stable : [];
           const betas = Array.isArray(data.betas) ? data.betas : [];
           const lines = [];
+          const now = new Date().toISOString().slice(0,10);
           lines.push(`# ${meta.name || 'Trusted Sources'}`);
           if (meta.description) lines.push('', meta.description);
-          lines.push('', '## Stable:', '');
+          lines.push('', `Last updated: ${now}`, '');
+          lines.push('## Stable:', '');
           lines.push('| Source | Apps | Add Source | Description |', '|---|---|---|---|');
           stable.forEach(s => {
             const apps = Array.isArray(s.apps) ? s.apps.map(a => `[${a.name}](${a.url})`).join(', ') : '';
