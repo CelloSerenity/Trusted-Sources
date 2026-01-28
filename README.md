@@ -6,7 +6,7 @@ Auto-updating, machine-parsable list of trusted AltSources.
 
 | Source | Apps | Add Source | Description |
 |---|---|---|---|
-| AltStore | [AltStore](https://github.com/altstoreio/AltStore/tree/classic), [Delta](https://github.com/rileytestut/Delta), [Clip](https://github.com/rileytestut/Clip) | [Open in AltDirect](https://stikstore.app/altdirect/?url=https%3A%2F%2Fapps.altstore.io%2F) | Alternative app store for iOS/iPadOS devices. |
+| AltStore | [AltStore](https://github.com/altstoreio/AltStore/tree/classic), [Delta](https://github.com/rileytestut/Delta), [Clip](https://github.com/rileytestut/Clip) | [Open in AltDirect](https://stikstore.app/altdirect/?url=https%3A%2F%2Fapps.altstore.io%2F) | AltStore: Alternative app store for iOS/iPadOS devices.; Delta: Multi-system emulator for iOS.; Clip: Clipboard manager for iOS that can monitor your clipboard indefinitely in the background. |
 | SideStore | [SideStore](https://github.com/SideStore/SideStore) | [Open in AltDirect](https://stikstore.app/altdirect/?url=https%3A%2F%2Fsidestore.io%2Fapps-v2.json) | Fork of AltStore which doesn't require a computer post-install. |
 | Feather | [Feather](https://github.com/khcrysalis/Feather) | [Open in AltDirect](https://stikstore.app/altdirect/?url=https%3A%2F%2Fgithub.com%2Fkhcrysalis%2FFeather%2Fraw%2Fmain%2Fapp-repo.json) | On-device iOS/iPadOS application signer/installer for Apple Developer Program (paid) certificates. |
 | LiveContainer | [LiveContainer](https://github.com/LiveContainer/LiveContainer) | [Open in AltDirect](https://stikstore.app/altdirect/?url=https%3A%2F%2Fgithub.com%2FLiveContainer%2FLiveContainer%2Fraw%2Fmain%2Fapps.json) | An app launcher that runs iOS apps without actually installing them! |
