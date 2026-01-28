@@ -32,15 +32,24 @@ jobs:
           lines.push('| Source | Apps | Add Source | Description |', '|---|---|---|---|');
           stable.forEach(s => {
             const apps = Array.isArray(s.apps) ? s.apps.map(a => `[${a.name}](${a.url})`).join(', ') : '';
-            const addUrl = `https://stikstore.app/altdirect/?url=${encodeURIComponent(s.url || '')}`;
-            const desc = Array.isArray(s.apps) && s.apps[0] && s.apps[0].description ? s.apps[0].description : '';
+            let addUrl = `https://stikstore.app/altdirect/?url=${encodeURIComponent(s.url || '')}`;
+            if (s.url && s.url.includes('livecontainer')) addUrl += '&exclude=livecontainer';
+            let desc = '';
+            if (Array.isArray(s.apps)) {
+              if (s.apps.length > 1) {
+                desc = s.apps.filter(a => a.description).map(a => `${a.name}: ${a.description}`).join('; ');
+              } else if (s.apps[0] && s.apps[0].description) {
+                desc = s.apps[0].description;
+              }
+            }
             lines.push(`| ${s.source || ''} | ${apps} | [Open in AltDirect](${addUrl}) | ${desc} |`);
           });
           lines.push('', '## Betas:', '');
           lines.push('| Source | Apps | Add Source |', '|---|---|---|');
           betas.forEach(s => {
             const apps = Array.isArray(s.apps) ? s.apps.map(a => `[${a.name}](${a.url})`).join(', ') : '';
-            const addUrl = `https://stikstore.app/altdirect/?url=${encodeURIComponent(s.url || '')}`;
+            let addUrl = `https://stikstore.app/altdirect/?url=${encodeURIComponent(s.url || '')}`;
+            if (s.url && s.url.includes('livecontainer')) addUrl += '&exclude=livecontainer';
             lines.push(`| ${s.source || ''} | ${apps} | [Open in AltDirect](${addUrl}) |`);
           });
           fs.writeFileSync(out, lines.join('\n'));
