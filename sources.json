@@ -1,7 +1,7 @@
 {
   "meta": {
     "name": "Trusted Sources",
-    "description": "Machine-parsable list of trusted AltSources.",
+    "description": "Auto-updating, machine-parsable list of trusted AltSources.",
     "date": "2026-01-28"
   },
   "stable": [
