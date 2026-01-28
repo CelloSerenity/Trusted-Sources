@@ -1,0 +1,72 @@
+name: Generate README from sources.json
+on:
+  push:
+    paths:
+      - 'sources.json'
+      - '.github/workflows/update-readme.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      - name: Generate README
+        run: |
+          node <<'NODE'
+          const fs = require('fs');
+          const path = 'sources.json';
+          const out = 'README.md';
+          const raw = fs.readFileSync(path, 'utf8');
+          const data = JSON.parse(raw);
+          const meta = data.meta || {};
+          const stable = Array.isArray(data.stable) ? data.stable : [];
+          const betas = Array.isArray(data.betas) ? data.betas : [];
+          const lines = [];
+          const now = new Date().toISOString().slice(0,10);
+          lines.push(`# ${meta.name || 'Trusted Sources'}`);
+          if (meta.description) lines.push('', meta.description);
+          lines.push('', `Last updated: ${now}`, '');
+          lines.push('## Stable:', '');
+          lines.push('| Source | Apps | Add Source | Description |', '|---|---|---|---|');
+          stable.forEach(s => {
+            const apps = Array.isArray(s.apps) ? s.apps.map(a => `[${a.name}](${a.url})`).join(', ') : '';
+            let addUrl = `https://stikstore.app/altdirect/?url=${s.url || ''}`;
+            if (s.url && s.url.includes('LiveContainer')) addUrl += '&exclude=livecontainer';
+            let desc = '';
+            if (Array.isArray(s.apps)) {
+              if (s.apps.length > 1) {
+                desc = s.apps.filter(a => a.description).map(a => `${a.name}: ${a.description}`).join(' ');
+              } else if (s.apps[0] && s.apps[0].description) {
+                desc = s.apps[0].description;
+              }
+            }
+            lines.push(`| ${s.source || ''} | ${apps} | [Open in AltDirect](${addUrl}) | ${desc} |`);
+          });
+          lines.push('', '## Betas:', '');
+          lines.push('| Source | Apps | Add Source |', '|---|---|---|');
+          betas.forEach(s => {
+            const apps = Array.isArray(s.apps) ? s.apps.map(a => `[${a.name}](${a.url})`).join(', ') : '';
+            let addUrl = `https://stikstore.app/altdirect/?url=${s.url || ''}`;
+            if (s.url && s.url.includes('livecontainer')) addUrl += '&exclude=livecontainer';
+            lines.push(`| ${s.source || ''} | ${apps} | [Open in AltDirect](${addUrl}) |`);
+          });
+          fs.writeFileSync(out, lines.join('\n'));
+          NODE
+      - name: Commit and push README
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No changes to README.md"
+          else
+            git commit -m "chore: update README.md from sources.json"
+            git push
+          fi
