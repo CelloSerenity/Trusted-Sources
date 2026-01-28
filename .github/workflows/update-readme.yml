@@ -33,7 +33,7 @@ jobs:
           stable.forEach(s => {
             const apps = Array.isArray(s.apps) ? s.apps.map(a => `[${a.name}](${a.url})`).join(', ') : '';
             let addUrl = `https://stikstore.app/altdirect/?url=${s.url || ''}`;
-            if (s.url && s.url.includes('livecontainer')) addUrl += '&exclude=livecontainer';
+            if (s.url && s.url.includes('LiveContainer')) addUrl += '&exclude=livecontainer';
             let desc = '';
             if (Array.isArray(s.apps)) {
               if (s.apps.length > 1) {
